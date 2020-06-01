@@ -94,6 +94,7 @@ export default function App({ Component, pageProps }) {
           <font size="3">Log Out</font>
         </button>
       </div>
+      <Component {...pageProps} />
     </div>
   );
 
