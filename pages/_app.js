@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { css } from "emotion";
+import { useRouter } from "next/router";
 import "../styles/global.css";
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
+
   return (
     <>
       <div
@@ -47,35 +50,35 @@ export default function App({ Component, pageProps }) {
               }
             `}
           >
-            <li>
+            <li className={router.pathname === "/" ? "active" : ""}>
               <Link href="/">
                 <a>
                   <span>Home</span>
                 </a>
               </Link>
             </li>
-            <li>
+            <li className={router.pathname === "/AboutME" ? "active" : ""}>
               <Link href="/AboutME">
                 <a>
                   <span>AboutME</span>
                 </a>
               </Link>
             </li>
-            <li>
+            <li className={router.pathname === "/Watch" ? "active" : ""}>
               <Link href="/Watch">
                 <a>
                   <span>Watch</span>
                 </a>
               </Link>
             </li>
-            <li>
+            <li className={router.pathname === "/SocialMedia" ? "active" : ""}>
               <Link href="/SocialMedia">
                 <a>
                   <span color="gray">SocialMedia</span>
                 </a>
               </Link>
             </li>
-            <li>
+            <li className={router.pathname === "/Pictures" ? "active" : ""}>
               <Link href="/Pictures">
                 <a>
                   <span color="gray">Pictures</span>
