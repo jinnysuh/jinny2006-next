@@ -40,46 +40,45 @@ export default function Home() {
         >
           <div
             className={css`
-                font-size: 3.2rem;
+              font-size: 3.2rem;
+              text-align: center;
+              font-weight: bold;
+              line-height: 1;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              text-decoration: none;
+              color: #fff;
+              &:before,
+              &:after {
+                display: block;
+                width: 100%;
                 text-align: center;
-                font-weight: bold;
-                line-height: 1;
+                content: "Welcome To Jinny's Website";
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                text-decoration: none;
-                color: #fff;
-                &:before,
-                &:after {
-                  display: block;
-                  width: 100%;
-                  text-align: center;
-                  content: "Welcome To Jinny's Website";
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  opacity: 0.8;
-                }
-                &:after {
-                  color: #f0f;
-                  z-index: -2;
-                }
+                opacity: 0.8;
+              }
+              &:after {
+                color: #f0f;
+                z-index: -2;
+              }
+              &:before {
+                color: #0ff;
+                z-index: -1;
+              }
+              &:hover {
                 &:before {
-                  color: #0ff;
-                  z-index: -1;
+                  animation: glitch-left 0.3s
+                    cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
                 }
-                &:hover {
-                  &:before {
-                    animation: glitch-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-                      both infinite;
-                  }
-                  &:after {
-                    animation: glitch-left-2 0.3s
-                      cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
-                  }
+                &:after {
+                  animation: glitch-left-2 0.3s
+                    cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
                 }
               }
               @keyframes glitch-left {
@@ -155,6 +154,7 @@ export default function Home() {
             className={css`
               display: flex;
               flex-direction: column;
+              align-items: center;
               margin-top: 1rem;
             `}
           >
@@ -190,6 +190,7 @@ export default function Home() {
             className={css`
               display: flex;
               flex-direction: column;
+              align-items: center;
               margin-top: 1rem;
               margin-left: 1rem;
             `}
