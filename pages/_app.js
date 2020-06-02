@@ -64,7 +64,7 @@ export default function App({ Component, pageProps }) {
                 </a>
               </Link>
             </li>
-            <li className={router.pathname === "/Watch" ? "active" : ""}>
+            <li className={router.pathname.includes("/Watch") ? "active" : ""}>
               <Link href="/Watch">
                 <a>
                   <span>Watch</span>
