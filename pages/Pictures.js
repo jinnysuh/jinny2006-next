@@ -1,4 +1,4 @@
-import React from "react";
+import Head from "next/Head";
 import Image from "../components/Image";
 export default function AboutMe() {
   return (
@@ -9,6 +9,9 @@ export default function AboutMe() {
         alignItems: "center",
       }}
     >
+      <Head>
+        <title>Jinny's Blog: Pictures</title>
+      </Head>
       <h1>
         {" "}
         Some drawings by Me, <font color="skyblue">Jinny</font>

@@ -1,31 +1,37 @@
+import Head from "next/Head";
 import Video from "../../components/Video";
 import Layout from "./layout";
 
 export default function Videos() {
   return (
-    <Layout>
-      <div>
-        <h1>
-          <font color="Black">Pivot animations</font>
-          <font color="gray"> By </font> <font color="gray">Me!</font>
-        </h1>
-        <Video videoCode="Q1JEWV5esDo" />
-        <h2>
-          <strong>
-            <font color="purple">MY INTRO!</font>
-          </strong>
-        </h2>
+    <>
+      <Head>
+        <title>Jinny's Blog: Videos</title>
+      </Head>
+      <Layout>
         <div>
-          <Video videoCode="0nRNeHLN85o" />
+          <h1>
+            <font color="Black">Pivot animations</font>
+            <font color="gray"> By </font> <font color="gray">Me!</font>
+          </h1>
+          <Video videoCode="Q1JEWV5esDo" />
+          <h2>
+            <strong>
+              <font color="purple">MY INTRO!</font>
+            </strong>
+          </h2>
+          <div>
+            <Video videoCode="0nRNeHLN85o" />
+          </div>
+          <div>
+            <Video videoCode="ZeEo65V327I" />
+          </div>
+          <div>
+            <Video videoCode="kfYSa_sO9KM" />
+          </div>
+          <p> © Copyright Jinny2006 All Rights Reserved.</p>
         </div>
-        <div>
-          <Video videoCode="ZeEo65V327I" />
-        </div>
-        <div>
-          <Video videoCode="kfYSa_sO9KM" />
-        </div>
-        <p> © Copyright Jinny2006 All Rights Reserved.</p>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
 }

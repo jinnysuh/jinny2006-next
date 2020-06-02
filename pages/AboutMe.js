@@ -1,3 +1,4 @@
+import Head from "next/Head";
 import { css } from "emotion";
 import Fade from "react-reveal/Fade";
 export default function AboutMe() {
@@ -7,6 +8,9 @@ export default function AboutMe() {
         display: flex;
       `}
     >
+      <Head>
+        <title>Jinny's Blog: About Me</title>
+      </Head>
       <h1 style={{ textAlign: "center" }}>
         About <font color="sky blue">ME</font>
       </h1>

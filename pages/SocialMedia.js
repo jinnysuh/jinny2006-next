@@ -1,3 +1,4 @@
+import Head from "next/Head";
 import { css } from "emotion";
 
 export default function Minecraft() {
@@ -5,6 +6,9 @@ export default function Minecraft() {
     <div
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
+      <Head>
+        <title>Jinny's Blog: Social Media</title>
+      </Head>
       <h2>
         <img
           alt=""

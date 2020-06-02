@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Head from "next/Head";
 import { css } from "emotion";
 import Dolly from "./Dolly";
 import Messages from "./Messages";
@@ -22,6 +23,9 @@ export default function Home() {
         flexDirection: "column",
       }}
     >
+      <Head>
+        <title>Jinny's Blog: Home</title>
+      </Head>
       <div
         className="App-intro"
         style={{
