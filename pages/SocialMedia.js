@@ -1,4 +1,4 @@
-import Head from "next/Head";
+import Head from "next/head";
 import { css } from "emotion";
 
 export default function Minecraft() {

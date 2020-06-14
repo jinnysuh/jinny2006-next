@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Head from "next/Head";
+import Head from "next/head";
 import { css } from "emotion";
 import Dolly from "./Dolly";
 import Messages from "./Messages";
