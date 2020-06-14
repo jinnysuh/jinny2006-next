@@ -10,12 +10,14 @@ export default function App({ Component, pageProps }) {
     <>
       <div
         className={css`
+          width: 100%;
           background-color: black;
           overflow: hidden;
         `}
       >
         <div
           className={css`
+            width: 100%;
             background: url("/background.png");
             background-size: cover;
             background-position: center top;

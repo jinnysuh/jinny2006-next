@@ -1,3 +1,5 @@
+import { css } from "emotion";
+
 export default function Dolly() {
   return (
     <section
@@ -7,9 +9,12 @@ export default function Dolly() {
         <img
           alt=""
           src="https://cdn.discordapp.com/attachments/444739722388963329/480891447290232832/2_0.jpg"
-          style={{
-            width: "500px",
-          }}
+          className={css`
+            width: 600px;
+            @media (max-width: 950px) {
+              width: 100%;
+            }
+          `}
         />
       </a>
     </section>
