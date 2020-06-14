@@ -4,7 +4,7 @@ Messages.propTypes = {
   messages: PropTypes.array.isRequired,
 };
 
-export default function Messages({ messages }) {
+export default function Messages({ messages = [] }) {
   return (
     <div
       style={{
