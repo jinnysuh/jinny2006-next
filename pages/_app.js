@@ -58,7 +58,7 @@ export default function App({ Component, pageProps }) {
               </Link>
             </li>
             <li className={router.pathname === "/AboutME" ? "active" : ""}>
-              <Link href="/AboutME">
+              <Link href="/AboutMe">
                 <a>
                   <span>AboutME</span>
                 </a>
