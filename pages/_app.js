@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }) {
                 }
                 &.active {
                   > a {
-                    color: red;
+                    color: white;
                   }
                 }
               }
@@ -80,25 +80,14 @@ export default function App({ Component, pageProps }) {
                 </a>
               </Link>
             </li>
-            <li className={router.pathname === "/Pictures" ? "active" : ""}>
-              <Link href="/Pictures">
+            <li className={router.pathname === "/History" ? "active" : ""}>
+              <Link href="/History">
                 <a>
-                  <span color="gray">Pictures</span>
+                  <span color="gray">History</span>
                 </a>
               </Link>
             </li>
           </ul>
-          <button
-            style={{
-              marginTop: "1rem",
-              cursor: "pointer",
-              marginRight: "3rem",
-            }}
-            onClick={handleLogout}
-          >
-            {" "}
-            <font size="3">Log Out</font>
-          </button>
         </div>
       </div>
       <Component {...pageProps} />

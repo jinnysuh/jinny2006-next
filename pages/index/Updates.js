@@ -29,6 +29,19 @@ export default function Updates() {
       <div style={{ marginTop: "1rem" }}>
         <Video videoCode="FIsNSId9mm4" />
       </div>
+      <p>
+        <font size="4">Recent ArtWork</font>
+      </p>
+      <img
+        alt=""
+        src="https://cdn.discordapp.com/attachments/714351689573859370/761538575975710720/robotic_skull_2020.4.4.jpg"
+        className={css`
+          width: 600px;
+          @media (max-width: 950px) {
+            width: 100%;
+          }
+        `}
+      />
     </section>
   );
 }

@@ -128,7 +128,6 @@ export default function Home() {
       <Sidebar />
       <Dolly />
       <Updates />
-      <button onClick={() => console.log("do something")}>Log in</button>
       {username && (
         <div style={{ marginTop: "1rem" }}>
           <p>Hello {username}!</p>
@@ -163,12 +162,9 @@ export default function Home() {
             `}
           >
             <p>
-              <img
-                alt=""
-                src="https://image.flaticon.com/icons/svg/131/131973.svg"
-                height="30"
-              />{" "}
-              <font size="3">Sign In</font>
+              <font size="3">
+                <b>Sign In</b>
+              </font>
             </p>
             <input
               value={loginUsernameInput}
@@ -200,12 +196,9 @@ export default function Home() {
             `}
           >
             <p>
-              <img
-                alt=""
-                src="https://image.flaticon.com/icons/svg/25/25284.svg"
-                height="30"
-              />{" "}
-              <font size="3">Sign Up</font>
+              <font size="3">
+                <b>Sign Up</b>
+              </font>
             </p>
             <input
               value={signUpUsernameInput}
